@@ -44,7 +44,8 @@ def predict():
 		    return "The Machine Learning model trained to predict the no. of cases was trained on accurate data obtained from Kaggle."                                                              
 		
 	data = request.get_json(force=True)
-	prompt = str(file)
+	data.update((x, [y]) for x,y in data.items())
+	prompt = str(data['prompt'])
 	access_token = "62UGLHWGE5ZJPTETZKHVUFMM5GXCLQLL"
 	client=Wit(access_token)
 	response = client.message(prompt)
