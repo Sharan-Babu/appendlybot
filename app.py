@@ -43,7 +43,7 @@ def predict():
 		elif intent == 'datasource':
 		    return "The Machine Learning model trained to predict the no. of cases was trained on accurate data obtained from Kaggle."                                                              
 		
-	file = request.files['input'].read()
+	data = request.get_json(force=True)
 	prompt = str(file)
 	access_token = "62UGLHWGE5ZJPTETZKHVUFMM5GXCLQLL"
 	client=Wit(access_token)
