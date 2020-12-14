@@ -1,1 +1,1 @@
-# skincancerchatbot
+# Appendly-bot
