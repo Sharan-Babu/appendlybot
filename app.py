@@ -25,7 +25,7 @@ def predict():
 		elif intent == 'send_notifications':
 		    return "To send a notification, firstly select the Send Notifications option in the sidebar. Here, select a drug present in the list and fill the details in the Patients list form. After this, click on the Fire Notification button to send your notification to the concerned patient."
 		elif intent == 'dashboard_features':
-		    return "In the dashboard, you can vieew your monthly reports, useful metrics like drug sales and marketing report. You can also plot and visualize your custom data. Moreover, in this page, you can manage your tasks and also view your Patients list."
+		    return "In the dashboard, you can view your monthly reports, useful metrics like drug sales and marketing report. You can also plot and visualize your custom data. Moreover, in this page, you can manage your tasks and also view your Patients list."
 		elif intent == 'add_patient':
 		    return "Click on the Patients List button in the sidebar. Here, click on the Add Patient button, fill the patient details and finally,click the Add to patients list button. You can now view your new patient in the list as well."
 		elif intent == 'patient_use':
