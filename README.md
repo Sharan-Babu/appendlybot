@@ -12,3 +12,7 @@ data = {'input':'what is your name'}
 send_request = requests.post(url,files=data).json()
 print(send_request)
 ```
+
+_Procfile_ is used to declare process type. It instructs Heroku on how to use various parts of your app.
+_app.py_ contains the chatbot logic.
+_requirements.txt_ has the libraries/dependencies to be installed.
